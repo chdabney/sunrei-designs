@@ -4,12 +4,28 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <>
-      <nav>
+      <nav className="navBar">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li className="nav-item">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              Services
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </>

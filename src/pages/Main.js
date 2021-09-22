@@ -6,7 +6,7 @@ import "./Main.css";
 const Main = () => {
   return (
     <>
-      <Header />
+      <Header className="header" />
       <Footer />
     </>
   );
