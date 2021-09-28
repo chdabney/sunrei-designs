@@ -1,6 +1,21 @@
+.navBar {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navBar-scrolled {
+  background: transparent;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .navBar ul {
   display: flex;
-
   justify-content: space-evenly;
 }
 
