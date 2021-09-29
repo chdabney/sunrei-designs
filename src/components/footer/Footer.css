@@ -1,8 +1,15 @@
 .footer-div {
-  background-color: black;
-  width: 100%;
-  
-  color: white;
+  background: url("../../assets/images/pexels-photo-2558605.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+  height: 40vh;
   text-align: center;
-  padding: 1.5em;
+  color: white;
+}
+
+.footer-div h1 {
+  padding: 20px;
 }

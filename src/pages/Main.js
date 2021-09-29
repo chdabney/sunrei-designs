@@ -6,11 +6,11 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <>
+    <div className="main">
       <Header />
-      <AboutSection/>
+      <AboutSection />
       <Footer />
-    </>
+    </div>
   );
 };
 

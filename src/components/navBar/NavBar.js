@@ -1,30 +1,27 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
-  const [positionY, setPositionY] = useState(0);
 
-  useEffect(()=>{
-    window.addEventListener("scroll", handleScroll)
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = (e) => {
+    if (window.scrollY >= 120) {
+      setShow(true);
+    } else {
+      setShow(false);
     }
-  }, [])
-
-  const handleScroll =(e)=> {
-    setPositionY((prevState)=> prevState + window.scrollY);
-    if(positionY > 100){
-      console.log(positionY)
-    }
-
-  }
-
-
+  };
 
   return (
     <>
-      <nav className="navBar">
+      <nav className={show ? "navBar active" : "navBar"}>
         <ul>
           <li className="nav-item">
             <a href="http://" target="_blank" rel="noopener noreferrer">

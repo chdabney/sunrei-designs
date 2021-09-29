@@ -4,14 +4,12 @@
   top: 0;
   width: 100%;
   z-index: 999;
+  transition: background-color 0.5s ease-in;
 }
 
-.navBar-scrolled {
-  background: transparent;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+.active {
+  background-color: rgba(255, 230, 0);
+  transition: all 0.5s ease;
 }
 
 .navBar ul {
